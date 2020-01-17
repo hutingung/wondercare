@@ -1,16 +1,32 @@
-<p>search works!</p>
-<div class="example-container">
-  <mat-form-field>
-    <input matInput placeholder="Input">
-  </mat-form-field>
-
-  <mat-form-field>
-    <textarea matInput placeholder="Textarea"></textarea>
-  </mat-form-field>
-
-  <mat-form-field>
-    <mat-select placeholder="Select">
-      <mat-option value="option">Option</mat-option>
-    </mat-select>
-  </mat-form-field>
-</div>
+<mat-grid-list cols="4" class="bgimg" rowHeight="35vh">
+  <mat-grid-tile [colspan]=2>
+  </mat-grid-tile>  
+  <mat-grid-tile [rowspan]=2>
+    <div class="search-box">
+      <h2>Find nearby childcare</h2>
+      <mat-form-field>
+        <input matInput placeholder="Where do you need child care?">
+      </mat-form-field>
+      
+      <section class="search-section">
+        <mat-checkbox class="search-margin">Full day</mat-checkbox>
+        <mat-checkbox class="search-margin">Half day</mat-checkbox>
+      </section>
+      <mat-form-field>
+        <mat-select placeholder="When">
+          <mat-option value="option">Immediate</mat-option>
+          <mat-option value="option">1-3months</mat-option>
+          <mat-option value="option">>3 months</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="Age">
+          <mat-option value="option">Under 2</mat-option>
+          <mat-option value="option">2-4</mat-option>
+          <mat-option value="option">>Above 4</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button color="primary">Search</button>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

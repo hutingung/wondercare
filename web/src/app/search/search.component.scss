@@ -1,8 +1,27 @@
-.example-container {
+.search-box {
   display: flex;
   flex-direction: column;
+  width: 90%;
+  background-color: white;
+  padding: 40px;
 }
 
-.example-container > * {
+.search-box > * {
   width: 100%;
+}
+
+.search-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.search-margin {
+  margin: 0 10px;
+}
+
+.bgimg {  
+  background: url('../../assets/img/banner.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
