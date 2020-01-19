@@ -1,0 +1,5 @@
+{
+  "modelPackage": "com.wondercare.center.api.model",
+  "apiPackage": "com.wondercare.center.api",
+  "invokerPackage": "com.wondercare"
+}
